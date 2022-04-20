@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 /* Reset */
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -23,9 +25,10 @@
   border-radius: 100%;
   border: 8px solid #2c2f3f;
   margin: 15px auto;
+  object-fit: cover;
 }
 
-h1 {
+#nav-bar h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,23 +45,27 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 16px 0px 0px;
 }
 
 .socials i:hover {
   background-color: #149ddd;
 }
 
-div i {
+.socials i {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border: 1px solid #2c2f3f;
   border-radius: 50%;
   background-color: #212431;
   font-size: 18px;
-  padding: 8px;
-  margin-right: 4px;
+  margin-right: 10px;
   color: white;
+  width: 36px;
+  height: 36px;
 }
 
 .nav-links {
@@ -67,6 +74,8 @@ div i {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 10%;
+  padding: 10px 0px 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul i {
@@ -76,12 +85,12 @@ ul i {
 .nav-link {
   list-style: none;
   font-size: 15px;
-  font-family: "Open Sans", sans-serif;
   padding: 30px 0px 0px;
 }
 
 a {
   text-decoration: none;
+  color: #a8a9b4;
 }
 
 a.link {
@@ -90,20 +99,31 @@ a.link {
   gap: 10px;
 }
 
-li a:link {
+li:visited > a {
   color: #a8a9b4;
 }
 
-li a:visited {
-  color: #a8a9b4;
-}
-
-li a:hover {
+li:hover > a {
   color: white;
 }
 
-li a:active {
+li:hover > a > i {
+  color: #149ddd;
+}
+
+li:visited > a {
   color: white;
+}
+li:visited > a > i {
+  color: #149ddd;
+}
+
+li > a:active {
+  color: white;
+}
+
+li:active > a > i {
+  color: #149ddd;
 }
 
 /* Main Content */
@@ -112,4 +132,32 @@ li a:active {
 }
 section {
   min-height: 100vh;
+}
+
+/* About */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+#home h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#home {
+  background-image: url(./male.jpg);
+  background-size: cover;
+}
+
+/* Media Query */
+@media screen {
 }
