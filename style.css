@@ -45,7 +45,6 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Open Sans", sans-serif;
   margin: 16px 0px 0px;
 }
 
@@ -99,10 +98,6 @@ a.link {
   gap: 10px;
 }
 
-li:visited > a {
-  color: #a8a9b4;
-}
-
 li:hover > a {
   color: white;
 }
@@ -118,32 +113,59 @@ li:visited > a > i {
   color: #149ddd;
 }
 
-li > a:active {
+li:focus > a {
   color: white;
 }
 
-li:active > a > i {
+li:focus > a > i {
   color: #149ddd;
 }
 
 /* Main Content */
+
+body {
+  display: flex;
+}
+
 #content {
   margin-left: 300px;
 }
+
+#content h2 {
+  font-family: "Raleway", sans-serif;
+  color: #173b6c;
+  text-decoration: underline #149ddd;
+  font-size: 32px;
+}
+
+#content h3 {
+  font-family: "Raleway", sans-serif;
+  color: #173b6c;
+  font-size: 26px;
+}
+
+#content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
 section {
   min-height: 100vh;
 }
 
-/* About */
+/* Home */
 
 #home {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(./male.jpg);
+  background-size: cover;
 }
 
 #home h1 {
+  font-size: 64px;
   color: white;
   font-family: "Raleway", sans-serif;
 }
@@ -151,11 +173,98 @@ section {
 #home h2 {
   color: white;
   font-family: "Poppins", sans-serif;
+  margin-right: 203px;
+  font-size: 26px;
 }
 
-#home {
-  background-image: url(./male.jpg);
-  background-size: cover;
+#home class {
+  text-decoration: underline #149ddd;
+}
+
+/* About */
+
+#about {
+  padding: 15px;
+  padding-top: 60px;
+}
+
+#about .title {
+  padding-bottom: 30px;
+}
+
+.title h2 {
+  padding-bottom: 20px;
+  font-weight: 1000;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  width: 400px;
+  height: 300px;
+}
+
+.info h3 {
+  font: 26px;
+}
+
+.p {
+  margin-left: 10px;
+}
+
+.p > h3 {
+  font-size: 26px;
+}
+
+.p > p {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.list {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  columns: 2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.list > ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li > i {
+  color: #149ddd;
+}
+
+strong {
+  font-size: 16px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+.facts {
+  padding-top: 96px;
+}
+
+.icon {
+  columns: 4;
+}
+
+.icon > p > b {
+  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Media Query */
