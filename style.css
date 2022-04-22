@@ -134,7 +134,9 @@ body {
 #content h2 {
   font-family: "Raleway", sans-serif;
   color: #173b6c;
-  text-decoration: underline #149ddd;
+  border-bottom: 3px solid #149ddd;
+  border-width: 1mm;
+  width: 50px;
   font-size: 32px;
 }
 
@@ -160,7 +162,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./male.jpg);
+  background-image: url(./Mika.jpg);
   background-size: cover;
 }
 
@@ -170,7 +172,7 @@ section {
   font-family: "Raleway", sans-serif;
 }
 
-#home h2 {
+#home p {
   color: white;
   font-family: "Poppins", sans-serif;
   margin-right: 203px;
@@ -190,6 +192,10 @@ section {
 
 #about .title {
   padding-bottom: 30px;
+}
+
+.about {
+  margin-top: 50px;
 }
 
 .title h2 {
@@ -258,13 +264,62 @@ span {
   padding-top: 96px;
 }
 
-.icon {
-  columns: 4;
+.title {
+  height: 100px;
 }
 
-.icon > p > b {
+#newrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.icon {
+  padding: 30px;
+}
+
+.icon i {
+  font-size: 50px;
+  color: #149ddd;
+}
+
+.icon b {
   font-size: 48px;
   font-family: "Open Sans", sans-serif;
+}
+
+.box {
+  padding-left: 55px;
+  font-size: 14px;
+  color: #122f57;
+}
+
+.skills {
+  padding-top: 96px;
+}
+
+.skills h2 {
+  padding-bottom: 20px;
+}
+
+.skillrow {
+  columns: 2;
+  padding-top: 50px;
+}
+
+.skillrow progress {
+  width: 100%;
+}
+
+.testimonial {
+  padding-top: 96px;
+}
+
+/* Contact */
+
+.container {
+  columns: 3;
 }
 
 /* Media Query */
